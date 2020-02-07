@@ -170,23 +170,118 @@
 
 
 
-var string = "22-11-1994"
-var temp = ''
-var result = []
+// var string = "22-11-1994"
+// var temp = ''
+// var result = []
 
-for (var i=0;i<string.length;i++){
-    if (string[i] !== '-'){
-        temp+= string[i]
-    } else {
-        result.push(temp)
-        temp = ''
-    }
-    // console.log(result)
-    // console.log(temp, '<<< ini temp')
-}
-console.log(temp)
-result.push(temp)
-console.log(result)
+// for (var i=0;i<string.length;i++){
+//     if (string[i] !== '-'){
+//         temp+= string[i]
+//     } else {
+//         result.push(temp)
+//         temp = ''
+//     }
+//     // console.log(result)
+//     // console.log(temp, '<<< ini temp')
+// }
+// console.log(temp)
+// result.push(temp)
+// console.log(result)
 
-// push , gunanya push data ke array yang tadi di kosongin dalam //
+// push , gunanya push data ke array dan bikin jadi i baru ([isinya push 1], [isinya push 2]) yang tadi di kosongin dalam //
 // case ini result [] //
+
+
+//CONCAT //
+
+// var concat1 = "good"
+//     concat2 = "luck"
+//     concat3 = "ya"
+
+// console.log(concat1.concat(concat2.concat(concat3)))
+
+//Char at
+
+// console.log(concat1.charAt(3)); /// hasilnya "d" 
+
+// var text = 'dung dung ces!';
+// console.log(text.indexOf('dung'));  // 0
+// console.log(text.indexOf('u'));     // 1
+// console.log(text.indexOf('jreng')); // -1
+
+// var stundetsName = [['Fadhil','male'],['Juan','Male'],['Kholid','Male']]
+
+// studentsName.push(['yoyok','male'])
+// console.log(stundentsname)
+
+var todos = [
+['makan',3],
+['belajar',0],
+['mandi',4]
+]
+
+// bikin supaya yang 0 jadi 3
+// var apapun = [['makan'],['belajar'],['mandi']]
+// var result = []
+
+for (var i=0; i<todos.length;i++){
+if (todos[i][0]=="belajar"){
+    todos[i][1]=4
+}
+}
+console.log(todos)
+
+
+
+// var string = 'xoxoxoxoxo'
+// var huruf = 'xo'
+
+// // hitung x o brapa //
+// var hasil = []
+// var countx = 0
+// var counto = 0
+// for (var i = 0 ; i < string.length ; i ++){
+//     for (var j = 0 ; j < huruf.length ; j++){
+//     temp++=
+//     }
+//     hasil.push(temp)
+// }
+
+// console.log (hasil)
+
+
+
+// var stundetsName = [['Fadhil','male'],['Juan','Male'],['Kholid','Male']]
+
+var number = [ 1 , 3 , 5 , 6 , 9 , 5]
+// // var kamus = ""
+
+
+for (var i = 0; i < number.length; i ++){
+    for (var j = i+1 ; j < number.length; j ++){
+        if ( number [j] < number [i]){
+            var temp = number [j];
+            number [j] = number [i];
+            number [i] = temp;
+        }
+
+    }
+}
+
+console.log(number)
+
+
+// var alpha = [ 'a' , 'b' , 'd' , 'e' , 'c' , 'f']
+// // var kamus = ""
+// // var kamus = [abcdef]
+
+// for (var i = 0; i < alpha.length; i ++){
+//     for (var j = 0 ; j < alpha.length - 1; j ++){
+//         if ( alpha [j] < alpha [j + 1]){
+//             var temp = alpha [j + 1];
+//             alpha [j + 1] = alpha [j];
+//             alpha [j] = temp;
+//         }
+
+//     }console.log(alpha)
+
