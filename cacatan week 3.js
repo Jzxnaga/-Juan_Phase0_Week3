@@ -119,16 +119,14 @@ var result = []
 for (var j=0;j<arr1.length;j++){
     var check = false
     for(var k=0;k<result.length;k++){
-        if(result[k]===arr1[j]){
+        if(result[k][0]===arr1[j]){
             check = true
+            result[k].push(arr1[j])
         }
     }
     if (!check){
-        result.push(arr1[j])
+        result.push([arr1[j]])
         }
-    else{
-        result.push(arr[j])
-    }
 }
 return result
 }
@@ -157,12 +155,6 @@ for(var i=0;i<nilai.length;i++){
 }
 return nilai
 }
-
-
-
-
-
-
 
 
 var nilai = [['Yoyok',80],['Judy',100],['Jane',50],['Judith',10]]

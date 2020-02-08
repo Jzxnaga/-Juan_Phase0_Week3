@@ -7,14 +7,14 @@ function perkalianUnik(arr) {
   for(var i=0;i<arr.length;i++){
       for (var j=0;j<arr.length;j++){
           if (i===j){
-          temp = temp*1
+          temp = temp*1 //// membuat array yang sama jadi 1
           }else{
-            temp = temp*arr[j]
+            temp = temp*arr[j] ///// array yang tadi 1 dikalikan dengan array lainnya
           }
 
       }
-      result.push(temp)
-      temp = 1
+      result.push(temp) //// temp yang berisi perkalian di atas di push ke kolom result
+      temp = 1 //// temp dikosongkan biar temp yang di atas ga kebawa ke perhitungan berikutnya
   }
 return result
 }
