@@ -12,7 +12,7 @@ for (var i=0;i<kalimat.length;i++){
     }
 }
 result.push(temp)
-return(result)
+return result.length
 }
 // TEST CASES
 console.log(hitungJumlahKata('I have a dream')); // 4
