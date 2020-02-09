@@ -1,24 +1,28 @@
-function angkaPalindrome(num) {
-    // you can only write your code here!
-    var num = num.toString()
-    if(num[0]==num[num.length-1]){
-    var num = parseInt(num)
-    return (num+1)
-}else{
-    var num = parseInt(num)
-    for( var i = 0; i<1000 ; i++){
-        temp = num+i
-        var temp = temp.toString()
-    if (temp[0]!==temp[temp.length-1]){
-        var temp = parseInt(temp)   
-    }else{
-        var temp = parseInt(temp)
-        return (temp)
+function angkaPalindrome(num){
+    var temp =''
+    var temp1=''
+    var temp2=''
+    var status = false
+    while(status === false){
+      if(num<9){
+        return num+1
+      }else{
+        num++
+        temp= num.toString()
+        for(var i = temp.length-1; i >=0;i--){
+          temp1+= temp[i]
+        }
+        temp2 = Number(temp1)
+        if(num===temp2){
+          status = true;
+          return num
+        }else{
+          temp1=''
+          status = false;
+        }
+      }
     }
-}
-}
-}
-
+  }
   // TEST CASES
   console.log(angkaPalindrome(8)); // 9
   console.log(angkaPalindrome(10)); // 11
