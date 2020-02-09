@@ -4,23 +4,23 @@
 // POP //
 // PUSH //
 
-// var string = "22-11-1994"
-// var temp = ''
-// var result = []
+var string = "22-11-1994"
+var temp = ''
+var result = []
 
-// for (var i=0;i<string.length;i++){
-//     if (string[i] !== '-'){
-//         temp+= string[i]
-//     } else {
-//         result.push(temp)
-//         temp = ''
-//     }
-//     // console.log(result)
-//     // console.log(temp, '<<< ini temp')
-// }
-// console.log(temp)
-// result.push(temp)
-// console.log(result)
+for (var i=0;i<string.length;i++){
+    if (string[i] !== '-'){
+        temp+= string[i]
+    } else {
+        result.push(temp)
+        temp = ''
+    }
+    // console.log(result)
+    // console.log(temp, '<<< ini temp')
+}
+console.log(temp)
+result.push(temp)
+console.log(result)
 
 // // push , gunanya push data ke array yang tadi di kosongin dalam //
 // // case ini result [] //
@@ -110,30 +110,30 @@
 
 
 
-function buku(arr1,arr2){
+// function buku(arr1,arr2){
 
-for (var i=0;i<arr2.length;i++){
-    arr1.push(arr2[i])
-}
-var result = []
-for (var j=0;j<arr1.length;j++){
-    var check = false
-    for(var k=0;k<result.length;k++){
-        if(result[k][0]===arr1[j]){
-            check = true
-            result[k].push(arr1[j])
-        }
-    }
-    if (!check){
-        result.push([arr1[j]])
-        }
-}
-return result
-}
+// for (var i=0;i<arr2.length;i++){
+//     arr1.push(arr2[i])
+// }
+// var result = []
+// for (var j=0;j<arr1.length;j++){
+//     var check = false
+//     for(var k=0;k<result.length;k++){
+//         if(result[k][0]===arr1[j]){
+//             check = true
+//             result[k].push(arr1[j])
+//         }
+//     }
+//     if (!check){
+//         result.push([arr1[j]])
+//         }
+// }
+// return result
+// }
 
-var arr1 = ['A','B','A','E','C','D','A']
-var arr2 = ['A','B']
-console.log(buku(arr1,arr2))
+// var arr1 = ['A','B','A','E','C','D','A']
+// var arr2 = ['A','B']
+// console.log(buku(arr1,arr2))
 
 
 /// Jika  ingin muncul [[A,A,A],[B,B],[C],[D],[E,E]]
@@ -141,25 +141,25 @@ console.log(buku(arr1,arr2))
 /// Bikin variable result
 /// FORE kedua itu untuk looping ke samping
 
-function nilaitertinggi (nilai){
+// function nilaitertinggi (nilai){
 
 
-for(var i=0;i<nilai.length;i++){
-    for(var j=i+1;j<nilai.length;j++){
-        if(nilai[j][1] < nilai[i][1]){
-            var temp = nilai[j];
-            nilai [j] = nilai [i];
-            nilai [i] = temp;
-        }
-    }
-}
-return nilai
-}
+// for(var i=0;i<nilai.length;i++){
+//     for(var j=i+1;j<nilai.length;j++){
+//         if(nilai[j][1] < nilai[i][1]){
+//             var temp = nilai[j];
+//             nilai [j] = nilai [i];
+//             nilai [i] = temp;
+//         }
+//     }
+// }
+// return nilai
+// }
 
 
-var nilai = [['Yoyok',80],['Judy',100],['Jane',50],['Judith',10]]
+// var nilai = [['Yoyok',80],['Judy',100],['Jane',50],['Judith',10]]
 
-console.log(nilaitertinggi(nilai))
+// console.log(nilaitertinggi(nilai))
 
 /// sortir by nilai dengan [yoyok],[80]
 //// looping ke dua j = i+1
