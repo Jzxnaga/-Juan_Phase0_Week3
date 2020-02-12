@@ -13,7 +13,7 @@ function groupAnimals(animals) {
     }
 }
 arr1.push(animals[0])
-// console.log (animals)
+// console.log (animals[0])
 for(var j=0;j<animals.length-1;j++){
     if(animals[j][0]===animals[j+1][0]){
         arr1.push(animals[j+1])
