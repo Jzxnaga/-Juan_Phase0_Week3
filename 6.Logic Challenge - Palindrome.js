@@ -5,21 +5,10 @@ function angkaPalindrome(num) {
   for (var i = temp.length - 1; i >= 0; i--) {
     temp1 += temp[i];
   }
-  // console.log (temp1+"initemp1")
-  // temp2 = Number(temp1);
-  // console.log(num+"ininum")
-  // console.log (temp2+"initemp2")
-  // console.log(num)
-  // console.log(temp1)
   if (num < 9) {
     return num + 1;
   } else {
     while (num != temp1) {
-      
-
-
-
-      
       console.log (num , temp1)
       num++
       temp1 = ""
