@@ -28,13 +28,7 @@ arr2.push(arr1)
 return arr2
 }
 
-// logika?!
-// arr1.push(animals[0])
-// arr1.push(animals[1])
-// arr2.push(arr1)
-// arr1=[]
-// arr1.push(animals[2])
-// arr2.push(arr1)
+
 
   // TEST CASES
   console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
